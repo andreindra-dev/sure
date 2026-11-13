@@ -2353,6 +2353,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Not synced yet'**
   String get connectionsNeverSynced;
+
+  /// Title of the sheet (and tooltip of the account screen button) that records an account's balance on a date.
+  ///
+  /// In en, this message translates to:
+  /// **'Update balance'**
+  String get updateBalanceTitle;
+
+  /// Label of the balance amount field in the update balance sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'New balance'**
+  String get updateBalanceAmountLabel;
+
+  /// Helper under the balance field showing the account's current balance.
+  ///
+  /// In en, this message translates to:
+  /// **'Current: {balance}'**
+  String updateBalanceCurrent(String balance);
+
+  /// Label of the optional notes field in the update balance sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Notes (optional)'**
+  String get updateBalanceNotesLabel;
+
+  /// Hint in the update balance sheet; the mobile app can't tell manual accounts from bank-connected ones.
+  ///
+  /// In en, this message translates to:
+  /// **'For accounts connected to a bank, the next bank sync may overwrite this balance.'**
+  String get updateBalanceLinkedHint;
+
+  /// Submit button of the update balance sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Save balance'**
+  String get updateBalanceSave;
+
+  /// Snackbar after the server accepted a new balance; history is recalculated in the background.
+  ///
+  /// In en, this message translates to:
+  /// **'Balance saved. It may take a moment to update.'**
+  String get updateBalanceSaved;
+
+  /// Snackbar when the server rejected or failed a balance update.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t update balance: {error}'**
+  String updateBalanceFailed(String error);
 }
 
 class _AppLocalizationsDelegate

@@ -8,6 +8,7 @@ import '../providers/categories_provider.dart';
 import '../providers/transactions_provider.dart';
 import '../screens/transaction_edit_screen.dart';
 import '../screens/transaction_form_screen.dart';
+import '../screens/update_balance_screen.dart';
 import '../widgets/account_detail_header.dart';
 import '../widgets/category_filter.dart';
 import '../widgets/sync_status_badge.dart';
@@ -35,6 +36,8 @@ class _TransactionsListScreenState extends State<TransactionsListScreen> {
   bool _isSelectionMode = false;
   final Set<String> _selectedTransactions = {};
   Set<String> _selectedCategoryIds = {};
+  // Bumped to rebuild AccountDetailHeader, which reloads the account.
+  int _headerVersion = 0;
 
   @override
   void initState() {
@@ -364,6 +367,18 @@ class _TransactionsListScreenState extends State<TransactionsListScreen> {
     });
   }
 
+  Future<void> _showUpdateBalance() async {
+    final saved = await showModalBottomSheet<bool>(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => UpdateBalanceScreen(account: widget.account),
+    );
+    if (saved == true && mounted) {
+      setState(() => _headerVersion++);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context);
@@ -378,6 +393,12 @@ class _TransactionsListScreenState extends State<TransactionsListScreen> {
             IconButton(
               icon: const Icon(Icons.delete),
               onPressed: _selectedTransactions.isEmpty ? null : _deleteSelectedTransactions,
+            )
+          else
+            IconButton(
+              icon: const Icon(Icons.account_balance_wallet_outlined),
+              tooltip: l.updateBalanceTitle,
+              onPressed: _showUpdateBalance,
             ),
           IconButton(
             icon: Icon(_isSelectionMode ? Icons.close : Icons.checklist),
@@ -387,7 +408,10 @@ class _TransactionsListScreenState extends State<TransactionsListScreen> {
       ),
       body: Column(
         children: [
-          AccountDetailHeader(account: widget.account),
+          AccountDetailHeader(
+            key: ValueKey(_headerVersion),
+            account: widget.account,
+          ),
           Expanded(
             child: Consumer<TransactionsProvider>(
               builder: (context, transactionsProvider, child) {

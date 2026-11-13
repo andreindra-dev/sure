@@ -1288,4 +1288,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get connectionsNeverSynced => 'Not synced yet';
+
+  @override
+  String get updateBalanceTitle => 'Update balance';
+
+  @override
+  String get updateBalanceAmountLabel => 'New balance';
+
+  @override
+  String updateBalanceCurrent(String balance) {
+    return 'Current: $balance';
+  }
+
+  @override
+  String get updateBalanceNotesLabel => 'Notes (optional)';
+
+  @override
+  String get updateBalanceLinkedHint =>
+      'For accounts connected to a bank, the next bank sync may overwrite this balance.';
+
+  @override
+  String get updateBalanceSave => 'Save balance';
+
+  @override
+  String get updateBalanceSaved =>
+      'Balance saved. It may take a moment to update.';
+
+  @override
+  String updateBalanceFailed(String error) {
+    return 'Couldn\'t update balance: $error';
+  }
 }
