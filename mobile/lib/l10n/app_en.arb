@@ -1261,5 +1261,68 @@
   "@updateBalanceFailed": {
     "description": "Snackbar when the server rejected or failed a balance update.",
     "placeholders": { "error": { "type": "String" } }
-  }
+  },
+
+"moreInsights": "Insights",
+  "@moreInsights": { "description": "Menu item title for the insights screen in the More screen." },
+
+"moreInsightsSubtitle": "Spending vs normal and tips",
+  "@moreInsightsSubtitle": { "description": "Subtitle for the Insights menu item in the More screen." },
+
+"insightsTitle": "Insights",
+  "@insightsTitle": { "description": "App bar title of the insights screen." },
+
+"insightsSpendingTitle": "Spending this month",
+  "@insightsSpendingTitle": { "description": "Label above the current month's net spending total." },
+
+"insightsAboveNormal": "{percent} above normal",
+  "@insightsAboveNormal": {
+    "description": "Spending is higher than the category/overall normal by a percentage.",
+    "placeholders": { "percent": { "type": "String" } }
+  },
+
+"insightsBelowNormal": "{percent} below normal",
+  "@insightsBelowNormal": {
+    "description": "Spending is lower than the normal by a percentage.",
+    "placeholders": { "percent": { "type": "String" } }
+  },
+
+"insightsAtNormal": "In line with normal",
+  "@insightsAtNormal": { "description": "Spending matches normal (within half a percent)." },
+
+"insightsNormal": "Normal: {amount}",
+  "@insightsNormal": {
+    "description": "The normal spending amount for comparison.",
+    "placeholders": { "amount": { "type": "String" } }
+  },
+
+"insightsNotEnoughHistory": "Not enough history to compare yet",
+  "@insightsNotEnoughHistory": { "description": "Shown when the server can't compute a normal (under 28 days of history)." },
+
+"insightsInProgressHint": "So far this month, compared with the same days of earlier months.",
+  "@insightsInProgressHint": { "description": "Explains how an unfinished month is compared." },
+
+"insightsByCategory": "By category",
+  "@insightsByCategory": { "description": "Header of the spending vs normal category list." },
+
+"insightsSpendingLoadFailed": "Couldn't load spending",
+  "@insightsSpendingLoadFailed": { "description": "Error state of the spending vs normal section." },
+
+"insightsSectionTitle": "Insights",
+  "@insightsSectionTitle": { "description": "Header of the proactive insights list." },
+
+"insightsPreviewDisabled": "Insights are a preview feature. Turn on preview features in the Sure web app settings to get them.",
+  "@insightsPreviewDisabled": { "description": "Shown when the API rejects insights because preview features are off." },
+
+"insightsLoadFailed": "Couldn't load insights",
+  "@insightsLoadFailed": { "description": "Error state of the insights list." },
+
+"insightsEmpty": "No insights right now.",
+  "@insightsEmpty": { "description": "Empty state of the insights list." },
+
+"insightsDismiss": "Dismiss",
+  "@insightsDismiss": { "description": "Button that acknowledges an insight so it stops showing." },
+
+"insightsDismissFailed": "Couldn't dismiss insight",
+  "@insightsDismissFailed": { "description": "Snackbar when acknowledging an insight failed." }
 }
