@@ -365,5 +365,18 @@
   "cashFlowOffline": "Du är offline. Kassaflödet beräknas av din Sure-server och kräver en anslutning.",
   "cashFlowOutdated": "Inaktuell",
   "cashFlowTransactionsEmpty": "Inga transaktioner under perioden",
-  "cashFlowTransactionsLoadFailed": "Kunde inte läsa in transaktioner"
+  "cashFlowTransactionsLoadFailed": "Kunde inte läsa in transaktioner",
+
+"moreConnections": "Kopplingar",
+  "moreConnectionsSubtitle": "Banksynk: status och uppdatering",
+  "connectionsTitle": "Kopplingar",
+  "connectionsSyncNow": "Synka nu",
+  "connectionsSyncStarted": "Synk startad. Saldon uppdateras när den är klar.",
+  "connectionsSyncFailed": "Kunde inte starta synk",
+  "connectionsLoadFailed": "Kunde inte läsa in kopplingar",
+  "connectionsEmpty": "Inga bankkopplingar än. Koppla en bank i Sures webbapp.",
+  "connectionsStatusSyncing": "Synkar…",
+  "connectionsStatusNeedsAttention": "Behöver åtgärdas – fixa det i Sures webbapp",
+  "connectionsLastSynced": "Senast synkad {time}",
+  "connectionsNeverSynced": "Inte synkad än"
 }

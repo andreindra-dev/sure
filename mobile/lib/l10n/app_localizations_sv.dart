@@ -1261,4 +1261,45 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get cashFlowTransactionsLoadFailed =>
       'Kunde inte läsa in transaktioner';
+
+  @override
+  String get moreConnections => 'Kopplingar';
+
+  @override
+  String get moreConnectionsSubtitle => 'Banksynk: status och uppdatering';
+
+  @override
+  String get connectionsTitle => 'Kopplingar';
+
+  @override
+  String get connectionsSyncNow => 'Synka nu';
+
+  @override
+  String get connectionsSyncStarted =>
+      'Synk startad. Saldon uppdateras när den är klar.';
+
+  @override
+  String get connectionsSyncFailed => 'Kunde inte starta synk';
+
+  @override
+  String get connectionsLoadFailed => 'Kunde inte läsa in kopplingar';
+
+  @override
+  String get connectionsEmpty =>
+      'Inga bankkopplingar än. Koppla en bank i Sures webbapp.';
+
+  @override
+  String get connectionsStatusSyncing => 'Synkar…';
+
+  @override
+  String get connectionsStatusNeedsAttention =>
+      'Behöver åtgärdas – fixa det i Sures webbapp';
+
+  @override
+  String connectionsLastSynced(String time) {
+    return 'Senast synkad $time';
+  }
+
+  @override
+  String get connectionsNeverSynced => 'Inte synkad än';
 }

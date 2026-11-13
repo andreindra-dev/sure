@@ -6,6 +6,7 @@ import '../widgets/sure_list_group.dart';
 import 'budgets_screen.dart';
 import 'calendar_screen.dart';
 import 'cash_flow_screen.dart';
+import 'connections_screen.dart';
 import 'recent_transactions_screen.dart';
 
 class MoreScreen extends StatelessWidget {
@@ -76,6 +77,20 @@ class MoreScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const RecentTransactionsScreen(),
+                      ),
+                    );
+                  },
+                ),
+                SureListRow(
+                  leading: _iconBadge(context, Icons.sync),
+                  title: l.moreConnections,
+                  subtitle: l.moreConnectionsSubtitle,
+                  showChevron: true,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ConnectionsScreen(),
                       ),
                     );
                   },
