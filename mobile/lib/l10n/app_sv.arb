@@ -387,5 +387,24 @@
   "updateBalanceLinkedHint": "För konton kopplade till en bank kan nästa banksynk skriva över saldot.",
   "updateBalanceSave": "Spara saldo",
   "updateBalanceSaved": "Saldo sparat. Det kan dröja en stund innan det uppdateras.",
-  "updateBalanceFailed": "Kunde inte uppdatera saldo: {error}"
+  "updateBalanceFailed": "Kunde inte uppdatera saldo: {error}",
+
+"moreInsights": "Insikter",
+  "moreInsightsSubtitle": "Utgifter mot det normala och tips",
+  "insightsTitle": "Insikter",
+  "insightsSpendingTitle": "Utgifter den här månaden",
+  "insightsAboveNormal": "{percent} över det normala",
+  "insightsBelowNormal": "{percent} under det normala",
+  "insightsAtNormal": "I nivå med det normala",
+  "insightsNormal": "Normalt: {amount}",
+  "insightsNotEnoughHistory": "För lite historik för att jämföra än",
+  "insightsInProgressHint": "Hittills den här månaden, jämfört med samma dagar i tidigare månader.",
+  "insightsByCategory": "Per kategori",
+  "insightsSpendingLoadFailed": "Kunde inte läsa in utgifter",
+  "insightsSectionTitle": "Insikter",
+  "insightsPreviewDisabled": "Insikter är en förhandsfunktion. Aktivera förhandsfunktioner i inställningarna i Sures webbapp för att få dem.",
+  "insightsLoadFailed": "Kunde inte läsa in insikter",
+  "insightsEmpty": "Inga insikter just nu.",
+  "insightsDismiss": "Avfärda",
+  "insightsDismissFailed": "Kunde inte avfärda insikten"
 }

@@ -1332,4 +1332,66 @@ class AppLocalizationsSv extends AppLocalizations {
   String updateBalanceFailed(String error) {
     return 'Kunde inte uppdatera saldo: $error';
   }
+
+  @override
+  String get moreInsights => 'Insikter';
+
+  @override
+  String get moreInsightsSubtitle => 'Utgifter mot det normala och tips';
+
+  @override
+  String get insightsTitle => 'Insikter';
+
+  @override
+  String get insightsSpendingTitle => 'Utgifter den här månaden';
+
+  @override
+  String insightsAboveNormal(String percent) {
+    return '$percent över det normala';
+  }
+
+  @override
+  String insightsBelowNormal(String percent) {
+    return '$percent under det normala';
+  }
+
+  @override
+  String get insightsAtNormal => 'I nivå med det normala';
+
+  @override
+  String insightsNormal(String amount) {
+    return 'Normalt: $amount';
+  }
+
+  @override
+  String get insightsNotEnoughHistory => 'För lite historik för att jämföra än';
+
+  @override
+  String get insightsInProgressHint =>
+      'Hittills den här månaden, jämfört med samma dagar i tidigare månader.';
+
+  @override
+  String get insightsByCategory => 'Per kategori';
+
+  @override
+  String get insightsSpendingLoadFailed => 'Kunde inte läsa in utgifter';
+
+  @override
+  String get insightsSectionTitle => 'Insikter';
+
+  @override
+  String get insightsPreviewDisabled =>
+      'Insikter är en förhandsfunktion. Aktivera förhandsfunktioner i inställningarna i Sures webbapp för att få dem.';
+
+  @override
+  String get insightsLoadFailed => 'Kunde inte läsa in insikter';
+
+  @override
+  String get insightsEmpty => 'Inga insikter just nu.';
+
+  @override
+  String get insightsDismiss => 'Avfärda';
+
+  @override
+  String get insightsDismissFailed => 'Kunde inte avfärda insikten';
 }

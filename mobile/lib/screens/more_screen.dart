@@ -7,6 +7,7 @@ import 'budgets_screen.dart';
 import 'calendar_screen.dart';
 import 'cash_flow_screen.dart';
 import 'connections_screen.dart';
+import 'insights_screen.dart';
 import 'recent_transactions_screen.dart';
 
 class MoreScreen extends StatelessWidget {
@@ -63,6 +64,20 @@ class MoreScreen extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const CashFlowScreen(),
+                      ),
+                    );
+                  },
+                ),
+                SureListRow(
+                  leading: _iconBadge(context, Icons.lightbulb_outline),
+                  title: l.moreInsights,
+                  subtitle: l.moreInsightsSubtitle,
+                  showChevron: true,
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const InsightsScreen(),
                       ),
                     );
                   },

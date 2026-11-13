@@ -2401,6 +2401,114 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t update balance: {error}'**
   String updateBalanceFailed(String error);
+
+  /// Menu item title for the insights screen in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Insights'**
+  String get moreInsights;
+
+  /// Subtitle for the Insights menu item in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Spending vs normal and tips'**
+  String get moreInsightsSubtitle;
+
+  /// App bar title of the insights screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Insights'**
+  String get insightsTitle;
+
+  /// Label above the current month's net spending total.
+  ///
+  /// In en, this message translates to:
+  /// **'Spending this month'**
+  String get insightsSpendingTitle;
+
+  /// Spending is higher than the category/overall normal by a percentage.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} above normal'**
+  String insightsAboveNormal(String percent);
+
+  /// Spending is lower than the normal by a percentage.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} below normal'**
+  String insightsBelowNormal(String percent);
+
+  /// Spending matches normal (within half a percent).
+  ///
+  /// In en, this message translates to:
+  /// **'In line with normal'**
+  String get insightsAtNormal;
+
+  /// The normal spending amount for comparison.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal: {amount}'**
+  String insightsNormal(String amount);
+
+  /// Shown when the server can't compute a normal (under 28 days of history).
+  ///
+  /// In en, this message translates to:
+  /// **'Not enough history to compare yet'**
+  String get insightsNotEnoughHistory;
+
+  /// Explains how an unfinished month is compared.
+  ///
+  /// In en, this message translates to:
+  /// **'So far this month, compared with the same days of earlier months.'**
+  String get insightsInProgressHint;
+
+  /// Header of the spending vs normal category list.
+  ///
+  /// In en, this message translates to:
+  /// **'By category'**
+  String get insightsByCategory;
+
+  /// Error state of the spending vs normal section.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load spending'**
+  String get insightsSpendingLoadFailed;
+
+  /// Header of the proactive insights list.
+  ///
+  /// In en, this message translates to:
+  /// **'Insights'**
+  String get insightsSectionTitle;
+
+  /// Shown when the API rejects insights because preview features are off.
+  ///
+  /// In en, this message translates to:
+  /// **'Insights are a preview feature. Turn on preview features in the Sure web app settings to get them.'**
+  String get insightsPreviewDisabled;
+
+  /// Error state of the insights list.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load insights'**
+  String get insightsLoadFailed;
+
+  /// Empty state of the insights list.
+  ///
+  /// In en, this message translates to:
+  /// **'No insights right now.'**
+  String get insightsEmpty;
+
+  /// Button that acknowledges an insight so it stops showing.
+  ///
+  /// In en, this message translates to:
+  /// **'Dismiss'**
+  String get insightsDismiss;
+
+  /// Snackbar when acknowledging an insight failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t dismiss insight'**
+  String get insightsDismissFailed;
 }
 
 class _AppLocalizationsDelegate

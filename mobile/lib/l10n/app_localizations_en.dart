@@ -1318,4 +1318,66 @@ class AppLocalizationsEn extends AppLocalizations {
   String updateBalanceFailed(String error) {
     return 'Couldn\'t update balance: $error';
   }
+
+  @override
+  String get moreInsights => 'Insights';
+
+  @override
+  String get moreInsightsSubtitle => 'Spending vs normal and tips';
+
+  @override
+  String get insightsTitle => 'Insights';
+
+  @override
+  String get insightsSpendingTitle => 'Spending this month';
+
+  @override
+  String insightsAboveNormal(String percent) {
+    return '$percent above normal';
+  }
+
+  @override
+  String insightsBelowNormal(String percent) {
+    return '$percent below normal';
+  }
+
+  @override
+  String get insightsAtNormal => 'In line with normal';
+
+  @override
+  String insightsNormal(String amount) {
+    return 'Normal: $amount';
+  }
+
+  @override
+  String get insightsNotEnoughHistory => 'Not enough history to compare yet';
+
+  @override
+  String get insightsInProgressHint =>
+      'So far this month, compared with the same days of earlier months.';
+
+  @override
+  String get insightsByCategory => 'By category';
+
+  @override
+  String get insightsSpendingLoadFailed => 'Couldn\'t load spending';
+
+  @override
+  String get insightsSectionTitle => 'Insights';
+
+  @override
+  String get insightsPreviewDisabled =>
+      'Insights are a preview feature. Turn on preview features in the Sure web app settings to get them.';
+
+  @override
+  String get insightsLoadFailed => 'Couldn\'t load insights';
+
+  @override
+  String get insightsEmpty => 'No insights right now.';
+
+  @override
+  String get insightsDismiss => 'Dismiss';
+
+  @override
+  String get insightsDismissFailed => 'Couldn\'t dismiss insight';
 }
