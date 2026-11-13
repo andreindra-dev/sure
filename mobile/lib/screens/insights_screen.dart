@@ -15,6 +15,7 @@ import '../widgets/sure_button.dart';
 import '../widgets/sure_card.dart';
 import '../widgets/sure_icon.dart';
 import '../widgets/sure_list_group.dart';
+import '../widgets/sure_note.dart';
 import 'cash_flow_screen.dart' show AccessTokenLoader, CashFlowFormat;
 
 /// This month's spending per category against normal, plus the proactive
@@ -159,7 +160,7 @@ class _InsightsScreenState extends State<InsightsScreen> {
     final spending = _spending;
     if (spending == null) {
       return [
-        _Note(
+        SureNote(
           text: l.insightsSpendingLoadFailed,
           action: SureButton(
             label: l.commonTryAgain,
@@ -187,13 +188,13 @@ class _InsightsScreenState extends State<InsightsScreen> {
     );
 
     if (_insightsError == InsightsService.featureDisabled) {
-      return [header, _Note(text: l.insightsPreviewDisabled)];
+      return [header, SureNote(text: l.insightsPreviewDisabled)];
     }
     if (_insightsError != null) {
-      return [header, _Note(text: l.insightsLoadFailed)];
+      return [header, SureNote(text: l.insightsLoadFailed)];
     }
     if (_insights.isEmpty) {
-      return [header, _Note(text: l.insightsEmpty)];
+      return [header, SureNote(text: l.insightsEmpty)];
     }
     return [
       header,
@@ -376,31 +377,6 @@ class _InsightCard extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: TextButton(onPressed: onDismiss, child: Text(l.insightsDismiss)),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class _Note extends StatelessWidget {
-  const _Note({required this.text, this.action});
-
-  final String text;
-  final Widget? action;
-
-  @override
-  Widget build(BuildContext context) {
-    final palette = SureColors.of(context).palette;
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: SureSpacing.xl),
-      child: Column(
-        children: [
-          Text(
-            text,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: palette.textSecondary),
-          ),
-          if (action != null) ...[const SizedBox(height: SureSpacing.lg), action!],
         ],
       ),
     );
