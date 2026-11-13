@@ -1231,5 +1231,35 @@
   },
 
 "connectionsNeverSynced": "Not synced yet",
-  "@connectionsNeverSynced": { "description": "Shown for a bank connection that has never finished a sync." }
+  "@connectionsNeverSynced": { "description": "Shown for a bank connection that has never finished a sync." },
+
+"updateBalanceTitle": "Update balance",
+  "@updateBalanceTitle": { "description": "Title of the sheet (and tooltip of the account screen button) that records an account's balance on a date." },
+
+"updateBalanceAmountLabel": "New balance",
+  "@updateBalanceAmountLabel": { "description": "Label of the balance amount field in the update balance sheet." },
+
+"updateBalanceCurrent": "Current: {balance}",
+  "@updateBalanceCurrent": {
+    "description": "Helper under the balance field showing the account's current balance.",
+    "placeholders": { "balance": { "type": "String" } }
+  },
+
+"updateBalanceNotesLabel": "Notes (optional)",
+  "@updateBalanceNotesLabel": { "description": "Label of the optional notes field in the update balance sheet." },
+
+"updateBalanceLinkedHint": "For accounts connected to a bank, the next bank sync may overwrite this balance.",
+  "@updateBalanceLinkedHint": { "description": "Hint in the update balance sheet; the mobile app can't tell manual accounts from bank-connected ones." },
+
+"updateBalanceSave": "Save balance",
+  "@updateBalanceSave": { "description": "Submit button of the update balance sheet." },
+
+"updateBalanceSaved": "Balance saved. It may take a moment to update.",
+  "@updateBalanceSaved": { "description": "Snackbar after the server accepted a new balance; history is recalculated in the background." },
+
+"updateBalanceFailed": "Couldn't update balance: {error}",
+  "@updateBalanceFailed": {
+    "description": "Snackbar when the server rejected or failed a balance update.",
+    "placeholders": { "error": { "type": "String" } }
+  }
 }

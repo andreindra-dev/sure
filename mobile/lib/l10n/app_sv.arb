@@ -378,5 +378,14 @@
   "connectionsStatusSyncing": "Synkar…",
   "connectionsStatusNeedsAttention": "Behöver åtgärdas – fixa det i Sures webbapp",
   "connectionsLastSynced": "Senast synkad {time}",
-  "connectionsNeverSynced": "Inte synkad än"
+  "connectionsNeverSynced": "Inte synkad än",
+
+"updateBalanceTitle": "Uppdatera saldo",
+  "updateBalanceAmountLabel": "Nytt saldo",
+  "updateBalanceCurrent": "Nuvarande: {balance}",
+  "updateBalanceNotesLabel": "Anteckning (valfritt)",
+  "updateBalanceLinkedHint": "För konton kopplade till en bank kan nästa banksynk skriva över saldot.",
+  "updateBalanceSave": "Spara saldo",
+  "updateBalanceSaved": "Saldo sparat. Det kan dröja en stund innan det uppdateras.",
+  "updateBalanceFailed": "Kunde inte uppdatera saldo: {error}"
 }

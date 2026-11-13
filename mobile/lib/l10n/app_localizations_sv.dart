@@ -1302,4 +1302,34 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get connectionsNeverSynced => 'Inte synkad än';
+
+  @override
+  String get updateBalanceTitle => 'Uppdatera saldo';
+
+  @override
+  String get updateBalanceAmountLabel => 'Nytt saldo';
+
+  @override
+  String updateBalanceCurrent(String balance) {
+    return 'Nuvarande: $balance';
+  }
+
+  @override
+  String get updateBalanceNotesLabel => 'Anteckning (valfritt)';
+
+  @override
+  String get updateBalanceLinkedHint =>
+      'För konton kopplade till en bank kan nästa banksynk skriva över saldot.';
+
+  @override
+  String get updateBalanceSave => 'Spara saldo';
+
+  @override
+  String get updateBalanceSaved =>
+      'Saldo sparat. Det kan dröja en stund innan det uppdateras.';
+
+  @override
+  String updateBalanceFailed(String error) {
+    return 'Kunde inte uppdatera saldo: $error';
+  }
 }
