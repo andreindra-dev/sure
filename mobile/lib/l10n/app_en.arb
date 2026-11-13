@@ -1324,5 +1324,107 @@
   "@insightsDismiss": { "description": "Button that acknowledges an insight so it stops showing." },
 
 "insightsDismissFailed": "Couldn't dismiss insight",
-  "@insightsDismissFailed": { "description": "Snackbar when acknowledging an insight failed." }
+  "@insightsDismissFailed": { "description": "Snackbar when acknowledging an insight failed." },
+
+"moreRecurring": "Recurring",
+  "@moreRecurring": { "description": "Menu item title for the recurring transactions screen in the More screen." },
+
+"moreRecurringSubtitle": "Bills, subscriptions and regular income",
+  "@moreRecurringSubtitle": { "description": "Subtitle for the Recurring menu item in the More screen." },
+
+"recurringTitle": "Recurring",
+  "@recurringTitle": { "description": "App bar title of the recurring transactions screen." },
+
+"recurringActiveHeader": "Active",
+  "@recurringActiveHeader": { "description": "Header of the list of active recurring transactions." },
+
+"recurringInactiveHeader": "Not active",
+  "@recurringInactiveHeader": { "description": "Header of the list of inactive, suggested, paused or ended recurring transactions." },
+
+"recurringNext": "Next {date}",
+  "@recurringNext": {
+    "description": "When a recurring transaction is next expected.",
+    "placeholders": { "date": { "type": "String" } }
+  },
+
+"recurringStatusInactive": "Inactive",
+  "@recurringStatusInactive": { "description": "Status of an inactive recurring transaction." },
+
+"recurringStatusSuggested": "Suggested",
+  "@recurringStatusSuggested": { "description": "Status of a detected recurring transaction the user hasn't confirmed yet." },
+
+"recurringStatusPaused": "Paused",
+  "@recurringStatusPaused": { "description": "Status of a paused recurring transaction." },
+
+"recurringStatusEnded": "Ended",
+  "@recurringStatusEnded": { "description": "Status of an ended recurring transaction." },
+
+"recurringEmpty": "No recurring transactions yet. Tap + to add one.",
+  "@recurringEmpty": { "description": "Empty state of the recurring transactions screen." },
+
+"recurringLoadFailed": "Couldn't load recurring transactions",
+  "@recurringLoadFailed": { "description": "Error state of the recurring transactions screen." },
+
+"recurringMarkInactive": "Mark inactive",
+  "@recurringMarkInactive": { "description": "Action that stops tracking an active recurring transaction." },
+
+"recurringMarkActive": "Mark active",
+  "@recurringMarkActive": { "description": "Action that makes a recurring transaction active again." },
+
+"recurringUpdateFailed": "Couldn't update: {error}",
+  "@recurringUpdateFailed": {
+    "description": "Snackbar when changing a recurring transaction's status failed.",
+    "placeholders": { "error": { "type": "String" } }
+  },
+
+"recurringDeleteTitle": "Delete recurring transaction?",
+  "@recurringDeleteTitle": { "description": "Title of the delete confirmation dialog." },
+
+"recurringDeleteContent": "\"{name}\" will be removed. Past transactions stay.",
+  "@recurringDeleteContent": {
+    "description": "Body of the delete confirmation dialog.",
+    "placeholders": { "name": { "type": "String" } }
+  },
+
+"recurringDeleteFailed": "Couldn't delete: {error}",
+  "@recurringDeleteFailed": {
+    "description": "Snackbar when deleting a recurring transaction failed.",
+    "placeholders": { "error": { "type": "String" } }
+  },
+
+"recurringAdd": "New recurring",
+  "@recurringAdd": { "description": "Title of the create sheet and tooltip of the add button." },
+
+"recurringNameLabel": "Name",
+  "@recurringNameLabel": { "description": "Label of the name field in the create sheet." },
+
+"recurringNameRequired": "Enter a name",
+  "@recurringNameRequired": { "description": "Validation error when the name is empty." },
+
+"recurringAccountLabel": "Account",
+  "@recurringAccountLabel": { "description": "Label of the account picker in the create sheet." },
+
+"recurringAccountRequired": "Choose an account",
+  "@recurringAccountRequired": { "description": "Validation error when no account is chosen." },
+
+"recurringNoAccounts": "Load your accounts on the dashboard first.",
+  "@recurringNoAccounts": { "description": "Shown in the create sheet when no accounts are loaded to pick from." },
+
+"recurringNextDateLabel": "Next date",
+  "@recurringNextDateLabel": { "description": "Label of the next expected date field." },
+
+"recurringMonthlyHint": "Repeats monthly on this day.",
+  "@recurringMonthlyHint": { "description": "Helper under the next date; the API creates monthly series only." },
+
+"recurringSave": "Save",
+  "@recurringSave": { "description": "Submit button of the create sheet." },
+
+"recurringCreated": "Recurring transaction added",
+  "@recurringCreated": { "description": "Snackbar after creating a recurring transaction." },
+
+"recurringCreateFailed": "Couldn't add: {error}",
+  "@recurringCreateFailed": {
+    "description": "Snackbar when creating a recurring transaction failed.",
+    "placeholders": { "error": { "type": "String" } }
+  }
 }

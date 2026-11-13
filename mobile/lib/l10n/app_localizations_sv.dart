@@ -1394,4 +1394,104 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get insightsDismissFailed => 'Kunde inte avfärda insikten';
+
+  @override
+  String get moreRecurring => 'Återkommande';
+
+  @override
+  String get moreRecurringSubtitle =>
+      'Räkningar, prenumerationer och regelbundna inkomster';
+
+  @override
+  String get recurringTitle => 'Återkommande';
+
+  @override
+  String get recurringActiveHeader => 'Aktiva';
+
+  @override
+  String get recurringInactiveHeader => 'Inte aktiva';
+
+  @override
+  String recurringNext(String date) {
+    return 'Nästa $date';
+  }
+
+  @override
+  String get recurringStatusInactive => 'Inaktiv';
+
+  @override
+  String get recurringStatusSuggested => 'Föreslagen';
+
+  @override
+  String get recurringStatusPaused => 'Pausad';
+
+  @override
+  String get recurringStatusEnded => 'Avslutad';
+
+  @override
+  String get recurringEmpty =>
+      'Inga återkommande transaktioner än. Tryck på + för att lägga till en.';
+
+  @override
+  String get recurringLoadFailed =>
+      'Kunde inte läsa in återkommande transaktioner';
+
+  @override
+  String get recurringMarkInactive => 'Markera som inaktiv';
+
+  @override
+  String get recurringMarkActive => 'Markera som aktiv';
+
+  @override
+  String recurringUpdateFailed(String error) {
+    return 'Kunde inte uppdatera: $error';
+  }
+
+  @override
+  String get recurringDeleteTitle => 'Ta bort återkommande transaktion?';
+
+  @override
+  String recurringDeleteContent(String name) {
+    return '\"$name\" tas bort. Tidigare transaktioner finns kvar.';
+  }
+
+  @override
+  String recurringDeleteFailed(String error) {
+    return 'Kunde inte ta bort: $error';
+  }
+
+  @override
+  String get recurringAdd => 'Ny återkommande';
+
+  @override
+  String get recurringNameLabel => 'Namn';
+
+  @override
+  String get recurringNameRequired => 'Ange ett namn';
+
+  @override
+  String get recurringAccountLabel => 'Konto';
+
+  @override
+  String get recurringAccountRequired => 'Välj ett konto';
+
+  @override
+  String get recurringNoAccounts => 'Läs in dina konton på översikten först.';
+
+  @override
+  String get recurringNextDateLabel => 'Nästa datum';
+
+  @override
+  String get recurringMonthlyHint => 'Upprepas varje månad på den här dagen.';
+
+  @override
+  String get recurringSave => 'Spara';
+
+  @override
+  String get recurringCreated => 'Återkommande transaktion tillagd';
+
+  @override
+  String recurringCreateFailed(String error) {
+    return 'Kunde inte lägga till: $error';
+  }
 }

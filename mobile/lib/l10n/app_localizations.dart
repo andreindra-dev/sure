@@ -2509,6 +2509,180 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t dismiss insight'**
   String get insightsDismissFailed;
+
+  /// Menu item title for the recurring transactions screen in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Recurring'**
+  String get moreRecurring;
+
+  /// Subtitle for the Recurring menu item in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Bills, subscriptions and regular income'**
+  String get moreRecurringSubtitle;
+
+  /// App bar title of the recurring transactions screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Recurring'**
+  String get recurringTitle;
+
+  /// Header of the list of active recurring transactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get recurringActiveHeader;
+
+  /// Header of the list of inactive, suggested, paused or ended recurring transactions.
+  ///
+  /// In en, this message translates to:
+  /// **'Not active'**
+  String get recurringInactiveHeader;
+
+  /// When a recurring transaction is next expected.
+  ///
+  /// In en, this message translates to:
+  /// **'Next {date}'**
+  String recurringNext(String date);
+
+  /// Status of an inactive recurring transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Inactive'**
+  String get recurringStatusInactive;
+
+  /// Status of a detected recurring transaction the user hasn't confirmed yet.
+  ///
+  /// In en, this message translates to:
+  /// **'Suggested'**
+  String get recurringStatusSuggested;
+
+  /// Status of a paused recurring transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Paused'**
+  String get recurringStatusPaused;
+
+  /// Status of an ended recurring transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Ended'**
+  String get recurringStatusEnded;
+
+  /// Empty state of the recurring transactions screen.
+  ///
+  /// In en, this message translates to:
+  /// **'No recurring transactions yet. Tap + to add one.'**
+  String get recurringEmpty;
+
+  /// Error state of the recurring transactions screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load recurring transactions'**
+  String get recurringLoadFailed;
+
+  /// Action that stops tracking an active recurring transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark inactive'**
+  String get recurringMarkInactive;
+
+  /// Action that makes a recurring transaction active again.
+  ///
+  /// In en, this message translates to:
+  /// **'Mark active'**
+  String get recurringMarkActive;
+
+  /// Snackbar when changing a recurring transaction's status failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t update: {error}'**
+  String recurringUpdateFailed(String error);
+
+  /// Title of the delete confirmation dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete recurring transaction?'**
+  String get recurringDeleteTitle;
+
+  /// Body of the delete confirmation dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'\"{name}\" will be removed. Past transactions stay.'**
+  String recurringDeleteContent(String name);
+
+  /// Snackbar when deleting a recurring transaction failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t delete: {error}'**
+  String recurringDeleteFailed(String error);
+
+  /// Title of the create sheet and tooltip of the add button.
+  ///
+  /// In en, this message translates to:
+  /// **'New recurring'**
+  String get recurringAdd;
+
+  /// Label of the name field in the create sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Name'**
+  String get recurringNameLabel;
+
+  /// Validation error when the name is empty.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a name'**
+  String get recurringNameRequired;
+
+  /// Label of the account picker in the create sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get recurringAccountLabel;
+
+  /// Validation error when no account is chosen.
+  ///
+  /// In en, this message translates to:
+  /// **'Choose an account'**
+  String get recurringAccountRequired;
+
+  /// Shown in the create sheet when no accounts are loaded to pick from.
+  ///
+  /// In en, this message translates to:
+  /// **'Load your accounts on the dashboard first.'**
+  String get recurringNoAccounts;
+
+  /// Label of the next expected date field.
+  ///
+  /// In en, this message translates to:
+  /// **'Next date'**
+  String get recurringNextDateLabel;
+
+  /// Helper under the next date; the API creates monthly series only.
+  ///
+  /// In en, this message translates to:
+  /// **'Repeats monthly on this day.'**
+  String get recurringMonthlyHint;
+
+  /// Submit button of the create sheet.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get recurringSave;
+
+  /// Snackbar after creating a recurring transaction.
+  ///
+  /// In en, this message translates to:
+  /// **'Recurring transaction added'**
+  String get recurringCreated;
+
+  /// Snackbar when creating a recurring transaction failed.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t add: {error}'**
+  String recurringCreateFailed(String error);
 }
 
 class _AppLocalizationsDelegate

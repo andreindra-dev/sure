@@ -1380,4 +1380,103 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get insightsDismissFailed => 'Couldn\'t dismiss insight';
+
+  @override
+  String get moreRecurring => 'Recurring';
+
+  @override
+  String get moreRecurringSubtitle => 'Bills, subscriptions and regular income';
+
+  @override
+  String get recurringTitle => 'Recurring';
+
+  @override
+  String get recurringActiveHeader => 'Active';
+
+  @override
+  String get recurringInactiveHeader => 'Not active';
+
+  @override
+  String recurringNext(String date) {
+    return 'Next $date';
+  }
+
+  @override
+  String get recurringStatusInactive => 'Inactive';
+
+  @override
+  String get recurringStatusSuggested => 'Suggested';
+
+  @override
+  String get recurringStatusPaused => 'Paused';
+
+  @override
+  String get recurringStatusEnded => 'Ended';
+
+  @override
+  String get recurringEmpty =>
+      'No recurring transactions yet. Tap + to add one.';
+
+  @override
+  String get recurringLoadFailed => 'Couldn\'t load recurring transactions';
+
+  @override
+  String get recurringMarkInactive => 'Mark inactive';
+
+  @override
+  String get recurringMarkActive => 'Mark active';
+
+  @override
+  String recurringUpdateFailed(String error) {
+    return 'Couldn\'t update: $error';
+  }
+
+  @override
+  String get recurringDeleteTitle => 'Delete recurring transaction?';
+
+  @override
+  String recurringDeleteContent(String name) {
+    return '\"$name\" will be removed. Past transactions stay.';
+  }
+
+  @override
+  String recurringDeleteFailed(String error) {
+    return 'Couldn\'t delete: $error';
+  }
+
+  @override
+  String get recurringAdd => 'New recurring';
+
+  @override
+  String get recurringNameLabel => 'Name';
+
+  @override
+  String get recurringNameRequired => 'Enter a name';
+
+  @override
+  String get recurringAccountLabel => 'Account';
+
+  @override
+  String get recurringAccountRequired => 'Choose an account';
+
+  @override
+  String get recurringNoAccounts =>
+      'Load your accounts on the dashboard first.';
+
+  @override
+  String get recurringNextDateLabel => 'Next date';
+
+  @override
+  String get recurringMonthlyHint => 'Repeats monthly on this day.';
+
+  @override
+  String get recurringSave => 'Save';
+
+  @override
+  String get recurringCreated => 'Recurring transaction added';
+
+  @override
+  String recurringCreateFailed(String error) {
+    return 'Couldn\'t add: $error';
+  }
 }
