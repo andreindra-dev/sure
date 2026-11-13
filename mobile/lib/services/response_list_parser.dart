@@ -34,11 +34,12 @@ Future<Map<String, dynamic>> fetchApiList<T>({
   required T Function(Map<String, dynamic>) fromJson,
   required bool Function(T) isValid,
   required String failureMessage,
+  http.Client? client,
 }) async {
   final url = Uri.parse('${ApiConfig.baseUrl}$path');
 
   try {
-    final response = await http.get(
+    final response = await (client?.get ?? http.get)(
       url,
       headers: {
         ...ApiConfig.getAuthHeaders(accessToken),

@@ -1247,4 +1247,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cashFlowTransactionsLoadFailed => 'Couldn\'t load transactions';
+
+  @override
+  String get moreConnections => 'Connections';
+
+  @override
+  String get moreConnectionsSubtitle => 'Bank sync status and refresh';
+
+  @override
+  String get connectionsTitle => 'Connections';
+
+  @override
+  String get connectionsSyncNow => 'Sync now';
+
+  @override
+  String get connectionsSyncStarted =>
+      'Sync started. Balances update when it finishes.';
+
+  @override
+  String get connectionsSyncFailed => 'Couldn\'t start sync';
+
+  @override
+  String get connectionsLoadFailed => 'Couldn\'t load connections';
+
+  @override
+  String get connectionsEmpty =>
+      'No bank connections yet. Connect a bank in the Sure web app.';
+
+  @override
+  String get connectionsStatusSyncing => 'Syncing…';
+
+  @override
+  String get connectionsStatusNeedsAttention =>
+      'Needs attention — fix it in the Sure web app';
+
+  @override
+  String connectionsLastSynced(String time) {
+    return 'Last synced $time';
+  }
+
+  @override
+  String get connectionsNeverSynced => 'Not synced yet';
 }

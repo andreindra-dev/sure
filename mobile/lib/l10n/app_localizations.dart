@@ -63,7 +63,7 @@ import 'app_localizations_sv.dart';
 /// property.
 abstract class AppLocalizations {
   AppLocalizations(String locale)
-    : localeName = intl.Intl.canonicalizedLocale(locale.toString());
+      : localeName = intl.Intl.canonicalizedLocale(locale.toString());
 
   final String localeName;
 
@@ -86,16 +86,16 @@ abstract class AppLocalizations {
   /// of delegates is preferred or required.
   static const List<LocalizationsDelegate<dynamic>> localizationsDelegates =
       <LocalizationsDelegate<dynamic>>[
-        delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ];
+    delegate,
+    GlobalMaterialLocalizations.delegate,
+    GlobalCupertinoLocalizations.delegate,
+    GlobalWidgetsLocalizations.delegate,
+  ];
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
     Locale('en'),
-    Locale('sv'),
+    Locale('sv')
   ];
 
   /// Application title shown in the OS task switcher.
@@ -2281,6 +2281,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Couldn\'t load transactions'**
   String get cashFlowTransactionsLoadFailed;
+
+  /// Menu item title for the bank connections screen in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Connections'**
+  String get moreConnections;
+
+  /// Subtitle for the Connections menu item in the More screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Bank sync status and refresh'**
+  String get moreConnectionsSubtitle;
+
+  /// App bar title of the bank connections screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Connections'**
+  String get connectionsTitle;
+
+  /// Button that asks the server to sync every bank connection.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync now'**
+  String get connectionsSyncNow;
+
+  /// Snackbar shown after the server accepted a sync request.
+  ///
+  /// In en, this message translates to:
+  /// **'Sync started. Balances update when it finishes.'**
+  String get connectionsSyncStarted;
+
+  /// Snackbar shown when the server rejected or failed a sync request.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t start sync'**
+  String get connectionsSyncFailed;
+
+  /// Error state of the bank connections screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Couldn\'t load connections'**
+  String get connectionsLoadFailed;
+
+  /// Empty state of the bank connections screen.
+  ///
+  /// In en, this message translates to:
+  /// **'No bank connections yet. Connect a bank in the Sure web app.'**
+  String get connectionsEmpty;
+
+  /// Status of a bank connection that is syncing right now.
+  ///
+  /// In en, this message translates to:
+  /// **'Syncing…'**
+  String get connectionsStatusSyncing;
+
+  /// Status of a bank connection that needs re-login, account setup, or failed its last sync.
+  ///
+  /// In en, this message translates to:
+  /// **'Needs attention — fix it in the Sure web app'**
+  String get connectionsStatusNeedsAttention;
+
+  /// When a bank connection last finished syncing.
+  ///
+  /// In en, this message translates to:
+  /// **'Last synced {time}'**
+  String connectionsLastSynced(String time);
+
+  /// Shown for a bank connection that has never finished a sync.
+  ///
+  /// In en, this message translates to:
+  /// **'Not synced yet'**
+  String get connectionsNeverSynced;
 }
 
 class _AppLocalizationsDelegate
@@ -2310,9 +2382,8 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
   }
 
   throw FlutterError(
-    'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
-    'an issue with the localizations generation tool. Please file an issue '
-    'on GitHub with a reproducible sample app and the gen-l10n configuration '
-    'that was used.',
-  );
+      'AppLocalizations.delegate failed to load unsupported locale "$locale". This is likely '
+      'an issue with the localizations generation tool. Please file an issue '
+      'on GitHub with a reproducible sample app and the gen-l10n configuration '
+      'that was used.');
 }
